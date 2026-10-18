@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fkInvest | Invista em tudo, em um só lugar</title>
+  <meta name="description" content="Ações, FIIs, renda fixa, fundos e cripto em uma única plataforma. Abra sua conta fkInvest em minutos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="fkInvest">
+        <span class="logo-mark">fk</span><span>fk<b>Invest</b></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#cartao">Cartão</a>
+        <a href="#investimentos">Investimentos</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#seguranca">Segurança</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-sm" href="#abrir-conta">Abrir conta</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO: iPhone que se aproxima e vira a seção 2 -->
+    <section class="hero" id="hero">
+      <div class="hero-stage" id="heroStage">
+        <div class="squares" id="squares" aria-hidden="true"></div>
+
+        <div class="container hero-center" id="heroCenter">
+          <h1 class="reveal">Invista em tudo.<br>Em um só lugar.</h1>
+          <p class="lead reveal">Ações, FIIs, renda fixa, fundos e cripto em uma plataforma simples, rápida e transparente. Abra sua conta em poucos minutos.</p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-ghost" href="#investimentos">Ver como funciona</a>
+            <a class="btn btn-accent" href="#abrir-conta">Abrir conta <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="phone" id="phone" aria-hidden="true">
+          <div class="phone-body">
+            <div class="phone-screen">
+              <div class="island"></div>
+              <div class="ph-ui">
+                <div class="ph-status"><span>9:41</span><span class="ph-sig"><i></i><i></i><i></i><i class="bat"></i></span></div>
+                <p class="ph-hello">Olá! <small>Seu patrimônio hoje</small></p>
+
+                <div class="ph-card ph-main">
+                  <small>Patrimônio total</small>
+                  <b>R$ 48.250,00</b>
+                  <span class="up">▲ R$ 1.320,40 (2,8%) no mês</span>
+                  <svg viewBox="0 0 300 70" preserveAspectRatio="none"><defs><linearGradient id="pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#129ca0" stop-opacity=".35"/><stop offset="1" stop-color="#129ca0" stop-opacity="0"/></linearGradient></defs><path d="M0 55 L30 50 L60 52 L90 36 L120 42 L150 27 L180 33 L210 18 L240 24 L270 9 L300 12 L300 70 L0 70Z" fill="url(#pg)"/><path d="M0 55 L30 50 L60 52 L90 36 L120 42 L150 27 L180 33 L210 18 L240 24 L270 9 L300 12" fill="none" stroke="#129ca0" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/></svg>
+                </div>
+
+                <div class="ph-card">
+                  <h4>Minha carteira</h4>
+                  <ul class="ph-alloc">
+                    <li><span>Renda fixa</span><i style="--w:45%"></i><b>45%</b></li>
+                    <li><span>Ações</span><i style="--w:30%"></i><b>30%</b></li>
+                    <li><span>FIIs</span><i style="--w:15%"></i><b>15%</b></li>
+                    <li><span>Cripto</span><i style="--w:10%"></i><b>10%</b></li>
+                  </ul>
+                </div>
+
+                <div class="ph-card">
+                  <h4>Movimentações</h4>
+                  <ul class="ph-list">
+                    <li><span>Aporte · Tesouro Selic</span><b>+ R$ 500</b></li>
+                    <li><span>Proventos · FII</span><b class="up">+ R$ 86</b></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="bubble bubble-l">
+            <div class="bb-ico">%</div>
+            <div class="bb-txt"><b>Proventos recebidos <time>há 2 min</time></b><span>Você recebeu R$ 86,00 de rendimentos dos seus fundos imobiliários.</span></div>
+          </div>
+          <div class="bubble bubble-r">
+            <div class="bb-ico">✓</div>
+            <div class="bb-txt"><b>Meta em dia <time>agora</time></b><span>Seu aporte mensal de R$ 500 foi concluído com sucesso.</span></div>
+          </div>
+</div>
+
+        <div class="phone-content" id="phoneContent">
+          <div class="container">
+            <span class="eyebrow">Plataforma</span>
+            <h2>Uma corretora completa, <em>na palma da mão.</em></h2>
+            <p class="pc-lead">Tudo o que você precisa para investir, acompanhar e organizar o seu patrimônio em um só app.</p>
+            <div class="stats-grid">
+              <div class="stat"><b data-count-later="6" data-suffix="">0</b><span>classes de ativos</span></div>
+              <div class="stat"><b data-count-later="100" data-suffix="%">0</b><span>digital e sem papelada</span></div>
+              <div class="stat"><b data-count-later="3" data-suffix=" min">0</b><span>para abrir sua conta*</span></div>
+              <div class="stat"><b data-count-later="24" data-suffix="/7">0</b><span>acesso ao app</span></div>
+            </div>
+            <p class="stats-note">*Tempo médio estimado; sujeito à análise cadastral.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARTÃO + CARTEIRA (animação ligada ao scroll) -->
+    <section class="scene" id="cartao" aria-label="Cartão fkInvest">
+      <div class="stage">
+        <div class="stage-glow" aria-hidden="true"></div>
+
+        <div class="scene-info" id="sceneInfo">
+          <span class="eyebrow">Cartão fkInvest</span>
+          <div class="info-stack">
+            <article class="info">
+              <span class="info-n">01</span>
+              <h2>Um cartão pensado para quem <em>investe.</em></h2>
+              <p>O fkInvest Black conecta o seu dia a dia aos seus objetivos financeiros, em um único lugar.</p>
+            </article>
+            <article class="info">
+              <span class="info-n">02</span>
+              <h2>Tudo no <em>mesmo app.</em></h2>
+              <p>Fatura, gastos e investimentos lado a lado, para você enxergar o patrimônio completo.</p>
+            </article>
+            <article class="info">
+              <span class="info-n">03</span>
+              <h2>Controle em <em>tempo real.</em></h2>
+              <p>Bloqueie, desbloqueie e ajuste limites pelo app, a qualquer hora e sem ligar para ninguém.</p>
+            </article>
+            <article class="info">
+              <span class="info-n">04</span>
+              <h2>Proteção em cada <em>compra.</em></h2>
+              <p>Monitoramento contínuo e alertas na hora para você ficar tranquilo com cada transação.</p>
+            </article>
+          </div>
+          <ol class="info-dots" aria-hidden="true"><li></li><li></li><li></li><li></li></ol>
+        </div>
+
+        <svg class="neon" id="neonBack" aria-hidden="true"><path class="rl l1" pathLength="1"/><path class="rl l2" pathLength="1"/><path class="rl l3" pathLength="1"/></svg>
+
+        <div class="wallet" id="wallet" aria-hidden="true">
+          <div class="wallet-back"></div>
+          <div class="card-wrap">
+            <div class="fk-card" id="fkCard">
+              <div class="face front">
+                <div class="fk-top">
+                  <span class="fk-logo"><i>fk</i>fk<b>Invest</b></span>
+                  <svg class="nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 8a6 6 0 0 1 0 8M10 5a10 10 0 0 1 0 14M14 2a14 14 0 0 1 0 20"/></svg>
+                </div>
+                <div class="chip"></div>
+                <div class="fk-num">•••• •••• •••• 2026</div>
+                <div class="fk-bottom">
+                  <div><small>Titular</small><span>FELIPE SOKULSKI</span></div>
+                  <div><small>Validade</small><span>12/30</span></div>
+                  <em class="fk-type">CRÉDITO</em>
+                </div>
+              </div>
+              <div class="face back">
+                <div class="mag"></div>
+                <div class="sign"><span>Assinatura</span></div>
+                <p>fkInvest · Cartão de crédito · Uso pessoal e intransferível.</p>
+              </div>
+            </div>
+          </div>
+          <div class="wallet-front"><span class="emboss">fk<b>Invest</b></span></div>
+        </div>
+
+        <svg class="neon" id="neonFront" aria-hidden="true"><path class="rl l1" pathLength="1"/><path class="rl l2" pathLength="1"/><path class="rl l3" pathLength="1"/></svg>
+
+        <div class="scroll-hint" id="sceneHint" aria-hidden="true"><span>Role para continuar</span><i></i></div>
+
+        <div class="scene-content" id="sceneContent">
+          <svg class="neon-arc" viewBox="0 0 1000 600" preserveAspectRatio="xMaxYMax slice" aria-hidden="true">
+            <defs>
+              <linearGradient id="arcg" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stop-color="#46e0c3" stop-opacity="0"/>
+                <stop offset=".4" stop-color="#46e0c3" stop-opacity=".85"/>
+                <stop offset="1" stop-color="#e6fff9"/>
+              </linearGradient>
+            </defs>
+            <path id="arcPath" class="arc-glow" pathLength="1" d="M 330 650 C 620 610 880 480 1030 270" stroke="url(#arcg)"/>
+            <path id="arcCore" class="arc-core" pathLength="1" d="M 330 650 C 620 610 880 480 1030 270" stroke="#f2fffc"/>
+          </svg>
+          <span class="eyebrow">Cartão fkInvest</span>
+          <h2>Seu patrimônio merece a <em>carteira certa.</em></h2>
+          <ul class="perks">
+            <li><b>Sem burocracia</b><span>Peça seu cartão pelo app, sem papelada e sem filas.</span></li>
+            <li><b>100% digital</b><span>Acompanhe tudo em tempo real, do primeiro gasto ao primeiro aporte.</span></li>
+            <li><b>Suporte humano</b><span>Atendimento de verdade quando você precisar de ajuda.</span></li>
+          </ul>
+          <a class="btn" href="#abrir-conta">Quero meu cartão <span aria-hidden="true">→</span></a>
+          <p class="hc-note">Conteúdo ilustrativo. Condições, limites e benefícios sujeitos à análise de crédito.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INVESTIMENTOS (tabs) -->
+    <section class="section" id="investimentos">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Investimentos</span>
+          <h2>Tudo o que você precisa para <em>diversificar.</em></h2>
+          <p>Ações, FIIs, renda fixa, fundos e cripto reunidos em uma única carteira.</p>
+        </header>
+
+        <div class="bento">
+          <!-- Ações -->
+          <article class="bc bc-a dark reveal">
+            <span class="bc-tag">Renda variável</span>
+            <h3>Ações do Brasil e do mundo</h3>
+            <p>Boleta simples, gráficos e ações fracionadas.</p>
+            <div class="bc-live" aria-hidden="true">
+              <div class="live-top">
+                <span class="live-badge" id="liveBadge"><i></i><span id="liveBadgeTxt">Carregando</span></span>
+                <span class="live-sym" id="liveSym">PETR4 · Petrobras PN</span>
+              </div>
+              <div class="live-price"><b id="livePrice">R$ 128,40</b><em id="liveChg" class="up">+0,00%</em></div>
+              <div class="live-plot">
+                <svg id="liveChart" viewBox="0 0 400 140" preserveAspectRatio="none">
+                  <defs><linearGradient id="lvg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#46e0c3" stop-opacity=".22"/><stop offset="1" stop-color="#46e0c3" stop-opacity="0"/></linearGradient></defs>
+                  <line id="liveBase" x1="0" x2="400" y1="70" y2="70" stroke="rgba(255,255,255,.14)" stroke-width="1" stroke-dasharray="3 5" vector-effect="non-scaling-stroke"/>
+                  <path id="liveArea" fill="url(#lvg)"/>
+                  <path id="liveLine" fill="none" stroke="#46e0c3" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+                </svg>
+                <i class="live-dot" id="liveDot"></i>
+              </div>
+              <p class="live-meta" id="liveMeta">Cotação de exemplo, apenas informativa.</p>
+            </div>
+            <ul class="bc-pills"><li>B3 e exterior</li><li>Stop e limite</li><li>Proventos</li></ul>
+          </article>
+
+          <!-- FIIs -->
+          <article class="bc bc-b light reveal">
+            <span class="bc-tag">Renda passiva</span>
+            <h3>Fundos imobiliários</h3>
+            <p>Rendimentos periódicos sem comprar um imóvel inteiro.</p>
+            <div class="bc-bars" aria-hidden="true">
+              <i style="--h:34%"></i><i style="--h:46%"></i><i style="--h:42%"></i><i style="--h:58%"></i><i style="--h:54%"></i><i style="--h:70%"></i><i style="--h:82%"></i>
+            </div>
+          </article>
+
+          <!-- Renda fixa -->
+          <article class="bc bc-c tealsoft reveal">
+            <span class="bc-tag">Previsibilidade</span>
+            <h3>Renda fixa</h3>
+            <p>Compare taxas e prazos lado a lado.</p>
+            <ul class="bc-pills bc-pills-dark"><li>Tesouro</li><li>CDB</li><li>LCI</li><li>LCA</li></ul>
+          </article>
+
+          <!-- Fundos e ETFs -->
+          <article class="bc bc-d light reveal">
+            <div class="bc-donut" aria-hidden="true">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="42" fill="none" stroke="#e6eef0" stroke-width="14"/>
+                <circle cx="60" cy="60" r="42" fill="none" stroke="#129ca0" stroke-width="14" pathLength="100" stroke-dasharray="46 100" transform="rotate(-90 60 60)"/>
+                <circle cx="60" cy="60" r="42" fill="none" stroke="#06404a" stroke-width="14" pathLength="100" stroke-dasharray="30 100" stroke-dashoffset="-48" transform="rotate(-90 60 60)"/>
+                <circle cx="60" cy="60" r="42" fill="none" stroke="#46e0c3" stroke-width="14" pathLength="100" stroke-dasharray="18 100" stroke-dashoffset="-80" transform="rotate(-90 60 60)"/>
+              </svg>
+            </div>
+            <div class="bc-body">
+              <span class="bc-tag">Diversificação</span>
+              <h3>Fundos e ETFs</h3>
+              <p>Gestão profissional e índices inteiros com uma única compra, com taxas visíveis antes de investir.</p>
+            </div>
+          </article>
+
+          <!-- Cripto -->
+          <article class="bc bc-e black reveal">
+            <span class="bc-tag">Alto risco</span>
+            <h3>Criptomoedas</h3>
+            <p>Os principais criptoativos na mesma carteira.</p>
+            <ul class="bc-coins" aria-hidden="true">
+              <li><span class="cg">₿</span><b>Bitcoin</b><svg viewBox="0 0 80 28" preserveAspectRatio="none"><path d="M0 22 L12 18 L24 20 L36 10 L48 14 L60 6 L80 3" fill="none" stroke="#46e0c3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><em class="up">+2,4%</em></li>
+              <li><span class="cg">Ξ</span><b>Ethereum</b><svg viewBox="0 0 80 28" preserveAspectRatio="none"><path d="M0 8 L12 12 L24 9 L36 16 L48 12 L60 20 L80 24" fill="none" stroke="#ff9b8e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><em class="down">−1,1%</em></li>
+              <li><span class="cg">◎</span><b>Solana</b><svg viewBox="0 0 80 28" preserveAspectRatio="none"><path d="M0 20 L12 22 L24 14 L36 17 L48 8 L60 11 L80 5" fill="none" stroke="#46e0c3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><em class="up">+5,7%</em></li>
+            </ul>
+          </article>
+
+          <!-- CTA -->
+          <article class="bc bc-f cta-card reveal">
+            <h3>Tudo na mesma carteira.</h3>
+            <p>Acompanhe todos os seus investimentos em um só lugar e comece com o valor que quiser.</p>
+            <a class="btn" href="#abrir-conta">Abrir conta <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+        <p class="bento-note">A cotação de PETR4 exibida no card de Ações é um exemplo informativo, com atraso, e não é recomendação de compra ou venda. Demais gráficos e variações são ilustrativos. Investimentos envolvem riscos, inclusive de perda do capital investido.</p>
+      </div>
+    </section>
+
+    <!-- NÍVEIS: 3 cartões em leque; o do meio dá zoom e leva ao simulador -->
+    <section class="tiers" id="niveis" aria-label="Níveis de cartão fkInvest">
+      <div class="tr-stage" id="trStage">
+        <div class="tr-dark" id="trDark"></div>
+        <div class="tr-title" id="trTitle">
+          <span class="eyebrow">Níveis fkInvest</span>
+          <h2>Três cartões. <em>Um para cada fase.</em></h2>
+        </div>
+
+        <div class="tr-deck" id="trDeck" aria-hidden="true">
+          <div class="tr-card tr-l" id="trL">
+            <div class="tr-face ess">
+              <div class="tf-top"><span class="tf-logo">fk<b>Invest</b></span><svg class="tf-nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 8a6 6 0 0 1 0 8M10 5a10 10 0 0 1 0 14M14 2a14 14 0 0 1 0 20"/></svg></div>
+              <div class="tf-chip"></div>
+              <div class="tf-name"><small>Nível 1</small><strong>Essencial</strong></div>
+              <div class="tf-bottom"><span>•••• 2026</span><span>FELIPE SOKULSKI</span></div>
+            </div>
+          </div>
+
+          <div class="tr-card tr-r" id="trR">
+            <div class="tr-face prime">
+              <div class="tf-top"><span class="tf-logo">fk<b>Invest</b></span><svg class="tf-nfc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 8a6 6 0 0 1 0 8M10 5a10 10 0 0 1 0 14M14 2a14 14 0 0 1 0 20"/></svg></div>
+              <div class="tf-chip"></div>
+              <div class="tf-name"><small>Nível 3</small><strong>Prime</strong></div>
+              <div class="tf-bottom"><span>•••• 2026</span><span>FELIPE SOKULSKI</span></div>
+            </div>
+          </div>
+
+          <div class="tr-card tr-m" id="trM">
+            <div class="tr-face inv">
+              <div class="tf-top"><span class="tf-logo">fk<b>Invest</b></span><em class="tf-badge">Exclusivo</em></div>
+              <div class="tf-holo"></div>
+              <div class="tf-name"><small>Nível 2</small><strong>Investidor</strong></div>
+              <div class="tf-proj">
+                <svg viewBox="0 0 200 70" preserveAspectRatio="none"><defs><linearGradient id="tfp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#46e0c3" stop-opacity=".35"/><stop offset="1" stop-color="#46e0c3" stop-opacity="0"/></linearGradient></defs><path d="M0 62 C40 58 80 52 110 40 S170 14 200 4 L200 70 L0 70Z" fill="url(#tfp)"/><path d="M0 62 C40 58 80 52 110 40 S170 14 200 4" fill="none" stroke="#46e0c3" stroke-width="2.2" stroke-linecap="round"/><path d="M0 62 L200 44" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="1.2" stroke-dasharray="3 4"/></svg>
+                <span>Simule o seu futuro</span>
+              </div>
+              <div class="tf-bottom"><span>•••• 2026</span><span>FELIPE SOKULSKI</span></div>
+            </div>
+            <div class="tr-back"><i class="tb-stripe"></i><div class="tb-sign"><span>Assinatura</span></div><p>fkInvest Investidor · uso pessoal e intransferível</p></div>
+          </div>
+        </div>
+
+        <div class="tr-labs" id="trLabs">
+          <div><b>Essencial</b><small>Para dar os primeiros passos</small></div>
+          <div class="hot"><b>Investidor</b><small>Exclusivo para quem investe</small></div>
+          <div><b>Prime</b><small>Para patrimônios maiores</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIMULADOR -->
+    <section class="section dark sm-section" id="simulador">
+      <div class="sm-bg" aria-hidden="true">
+        <svg viewBox="0 0 1200 700" preserveAspectRatio="xMaxYMax slice">
+          <g fill="none" stroke="#46e0c3" stroke-width="1.2">
+            <circle cx="1100" cy="720" r="260" stroke-opacity=".22"/>
+            <circle cx="1100" cy="720" r="400" stroke-opacity=".15"/>
+            <circle cx="1100" cy="720" r="560" stroke-opacity=".1"/>
+            <circle cx="1100" cy="720" r="740" stroke-opacity=".06"/>
+          </g>
+        </svg>
+      </div>
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Simulador</span>
+          <h2>Monte o <em>seu cenário.</em></h2>
+          <p>Personalize valores, prazo, retorno, inflação, custos e meta. Tudo é calculado na hora, no seu navegador.</p>
+        </header>
+
+        <div class="sm-panel sm-wide reveal">
+          <div class="sm-controls" id="smControls"></div>
+
+          <div class="sm-result" id="smResult">
+            <p class="sm-kicker">Patrimônio líquido estimado em <span id="r-years">10 anos</span></p>
+            <b class="sm-total" id="r-total">R$ 0</b>
+            <p class="sm-real" id="r-real"></p>
+
+            <div class="sm-kpis" id="smKpis"></div>
+
+            <div class="sm-bar" aria-hidden="true"><i id="sm-bar-inv"></i><i id="sm-bar-gain"></i></div>
+            <p class="sm-share" id="sm-share"></p>
+
+            <div class="sm-goal" id="smGoal"></div>
+
+            <div class="sm-toggles">
+              <label class="sm-switch"><input type="checkbox" id="smScen" checked><span>Cenários (±3 p.p.)</span></label>
+              <label class="sm-switch"><input type="checkbox" id="smReal"><span>Valores de hoje</span></label>
+            </div>
+
+            <div class="sm-plot" id="sm-plot">
+              <svg id="sim-chart" viewBox="0 0 400 180" preserveAspectRatio="none" role="img" aria-label="Gráfico da evolução do patrimônio"></svg>
+              <i class="sm-guide" id="sm-guide"></i>
+              <i class="sm-dot" id="sm-dot"></i>
+              <div class="sm-tip" id="sm-tip"></div>
+            </div>
+            <div class="sm-axis"><span>Hoje</span><span id="sm-mid"></span><span id="sm-end"></span></div>
+            <ul class="sm-legend" id="smLegend"></ul>
+
+            <div class="sm-alloc" id="smAlloc" hidden></div>
+
+            <details class="sm-table">
+              <summary>Ver tabela ano a ano</summary>
+              <div class="sm-tablewrap"><table id="smTable"></table></div>
+              <div class="sm-actions">
+                <button type="button" id="smCsv">Baixar CSV</button>
+                <button type="button" id="smCopy">Copiar resumo</button>
+                <span id="smCopied" aria-live="polite"></span>
+              </div>
+            </details>
+
+            <p class="sm-note">Simulação ilustrativa com taxas hipotéticas e constantes, definidas por você. Não considera todos os tributos e custos reais, não é promessa nem garantia de rentabilidade e não é recomendação de investimento. Rentabilidade passada não garante rentabilidade futura. Investimentos envolvem riscos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECURSOS -->
+    <section class="section rc" id="recursos">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Recursos</span>
+          <h2>Feita para quem quer <em>investir melhor.</em></h2>
+          <p>Ferramentas simples, do primeiro aporte à carteira completa.</p>
+        </header>
+
+        <div class="rcg">
+          <!-- 100% digital -->
+          <article class="rc-card rc-1 reveal">
+            <div class="rc-stat">
+              <svg class="rc-scribble" viewBox="0 0 260 120" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="130" cy="60" rx="122" ry="48" transform="rotate(-3 130 60)"/></svg>
+              <b>100%</b>
+            </div>
+            <h3>Digital</h3>
+            <p>Abra a conta e invista sem papelada, do celular.</p>
+          </article>
+
+          <!-- Carteira consolidada -->
+          <article class="rc-card rc-2 reveal">
+            <div class="rc-ico"><span></span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12A9 9 0 1 1 12 3v9z"/><path d="M15 3.5A9 9 0 0 1 20.5 9H15z"/></svg>
+            </div>
+            <h3>Carteira consolidada</h3>
+            <p>Todos os seus investimentos em uma só tela, com extratos e informes para o IR.</p>
+          </article>
+
+          <!-- Execução rápida -->
+          <article class="rc-card rc-3 reveal">
+            <div class="rc-wave">
+              <div class="rc-wave-top"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>Ordem enviada</span><em>agora</em></div>
+              <svg viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true">
+                <defs><linearGradient id="rcw" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".28"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+                <path d="M0 62 L14 40 L26 48 L40 30 L54 44 L68 36 L82 50 L98 24 L112 40 L126 28 L140 46 L156 18 L170 38 L186 22 L200 44 L216 26 L232 40 L248 20 L264 36 L280 44 L300 60 L300 70 L0 70Z" fill="url(#rcw)"/>
+                <path class="rc-draw" pathLength="1" d="M0 62 L14 40 L26 48 L40 30 L54 44 L68 36 L82 50 L98 24 L112 40 L126 28 L140 46 L156 18 L170 38 L186 22 L200 44 L216 26 L232 40 L248 20 L264 36 L280 44 L300 60" fill="none" stroke="rgba(255,255,255,.75)" stroke-width="1.6" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Execução rápida</h3>
+            <p>Boleta simples e ordens enviadas em instantes, pelo app ou pelo navegador.</p>
+          </article>
+
+          <!-- Metas -->
+          <article class="rc-card rc-4 reveal">
+            <div class="rc-left">
+              <div class="rc-ico"><span></span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></svg>
+              </div>
+              <div>
+                <h3>Metas financeiras</h3>
+                <p>Crie objetivos, acompanhe o progresso e automatize seus aportes mensais.</p>
+              </div>
+            </div>
+            <div class="rc-frame" aria-hidden="true">
+              <div class="rc-dots"><i></i><i></i><i></i></div>
+              <svg viewBox="0 0 220 120" preserveAspectRatio="none">
+                <defs><linearGradient id="rcm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+                <path d="M0 108 L16 100 L30 104 L46 88 L60 94 L76 72 L92 80 L108 58 L124 66 L140 44 L156 52 L172 30 L190 36 L206 14 L220 8 L220 120 L0 120Z" fill="url(#rcm)"/>
+                <path class="rc-draw" pathLength="1" d="M0 108 L16 100 L30 104 L46 88 L60 94 L76 72 L92 80 L108 58 L124 66 L140 44 L156 52 L172 30 L190 36 L206 14 L220 8" fill="none" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </article>
+
+          <!-- Alertas -->
+          <article class="rc-card rc-5 reveal">
+            <div class="rc-left">
+              <div class="rc-ico"><span></span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+              </div>
+              <div>
+                <h3>Alertas inteligentes</h3>
+                <p>Avisos de preço, proventos e vencimentos, na hora certa.</p>
+              </div>
+            </div>
+            <ul class="rc-chips" aria-hidden="true">
+              <li><span>Proventos recebidos</span><i></i></li>
+              <li><span>Meta em dia</span><i></i></li>
+              <li><span>CDB vencendo</span><i></i></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MACBOOK: zoom na tela e passagem para a próxima seção -->
+    <section class="mb-scene" id="macbook" aria-label="Painel fkInvest no computador">
+      <div class="mb-stage" id="mbStage">
+        <div class="mb-dark" id="mbDark"></div>
+        <div class="mb-title" id="mbTitle">
+          <span class="eyebrow">No computador também</span>
+          <h2>Tudo em um só <em>painel.</em></h2>
+        </div>
+
+        <div class="mb" id="mb" aria-hidden="true">
+          <div class="mb-lid" id="mbLid">
+            <div class="mb-screen" id="mbScreen">
+              <div class="mb-wall"></div>
+              <div class="mb-notch"><i></i></div>
+
+              <div class="mb-ui">
+                <div class="mb-menu">
+                  <span class="l"><b>fk</b><em class="app">fkInvest</em><em>Arquivo</em><em>Editar</em><em>Visualizar</em><em>Janela</em></span>
+                  <span class="r">
+                    <svg viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M1.5 4.2a9.5 9.5 0 0 1 13 0M4 7a6 6 0 0 1 8 0"/><circle cx="8" cy="10" r="1" fill="currentColor" stroke="none"/></svg>
+                    <svg viewBox="0 0 27 12" fill="none"><rect x=".5" y=".5" width="22" height="11" rx="3.5" stroke="currentColor" opacity=".5"/><rect x="2" y="2" width="16" height="8" rx="2" fill="currentColor"/></svg>
+                    <em>ter 9:41</em>
+                  </span>
+                </div>
+
+                <div class="mb-window">
+                  <div class="mb-tl"><i class="r"></i><i class="y"></i><i class="g"></i><span>fkInvest · Visão geral</span></div>
+                  <div class="ds">
+                    <aside class="ds-side">
+                      <b class="ds-logo">fk<span>Invest</span></b>
+                      <ul>
+                        <li class="on"><i></i>Visão geral</li>
+                        <li><i></i>Carteira</li>
+                        <li><i></i>Investimentos</li>
+                        <li><i></i>Metas</li>
+                        <li><i></i>Extrato</li>
+                      </ul>
+                      <div class="ds-user"><i></i><span>Felipe<small>Perfil moderado</small></span></div>
+                    </aside>
+
+                    <div class="ds-main">
+                      <header class="ds-top"><span>Olá, Felipe</span><em>Buscar ativos</em><i></i></header>
+
+                      <div class="ds-grid">
+                        <section class="ds-card ds-hero">
+                          <small>Patrimônio total</small>
+                          <b>R$ 48.250,00</b>
+                          <span class="up">▲ R$ 1.320,40 (2,8%) no mês</span>
+                          <svg viewBox="0 0 300 80" preserveAspectRatio="none"><defs><linearGradient id="dsg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#46e0c3" stop-opacity=".3"/><stop offset="1" stop-color="#46e0c3" stop-opacity="0"/></linearGradient></defs><path d="M0 64 L25 58 L50 61 L75 44 L100 50 L125 34 L150 40 L175 24 L200 30 L225 16 L250 22 L275 8 L300 12 L300 80 L0 80Z" fill="url(#dsg)"/><path d="M0 64 L25 58 L50 61 L75 44 L100 50 L125 34 L150 40 L175 24 L200 30 L225 16 L250 22 L275 8 L300 12" fill="none" stroke="#46e0c3" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/></svg>
+                        </section>
+
+                        <section class="ds-card ds-alloc">
+                          <small>Carteira</small>
+                          <div class="ds-donut">
+                            <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="42" fill="none" stroke="#161d21" stroke-width="14"/><circle cx="60" cy="60" r="42" fill="none" stroke="#46e0c3" stroke-width="14" pathLength="100" stroke-dasharray="45 100" transform="rotate(-90 60 60)"/><circle cx="60" cy="60" r="42" fill="none" stroke="#129ca0" stroke-width="14" pathLength="100" stroke-dasharray="30 100" stroke-dashoffset="-47" transform="rotate(-90 60 60)"/><circle cx="60" cy="60" r="42" fill="none" stroke="#9df2e0" stroke-width="14" pathLength="100" stroke-dasharray="15 100" stroke-dashoffset="-79" transform="rotate(-90 60 60)"/></svg>
+                            <ul><li><i style="background:#46e0c3"></i>Renda fixa<b>45%</b></li><li><i style="background:#129ca0"></i>Ações<b>30%</b></li><li><i style="background:#9df2e0"></i>FIIs<b>15%</b></li><li><i style="background:#fff"></i>Cripto<b>10%</b></li></ul>
+                          </div>
+                        </section>
+
+                        <section class="ds-card ds-goals">
+                          <small>Metas</small>
+                          <div class="g"><span>Viagem<b>62%</b></span><i><u style="width:62%"></u></i></div>
+                          <div class="g"><span>Reserva de emergência<b>38%</b></span><i><u style="width:38%"></u></i></div>
+                          <div class="g"><span>Imóvel<b>14%</b></span><i><u style="width:14%"></u></i></div>
+                        </section>
+
+                        <section class="ds-card ds-moves">
+                          <small>Movimentações</small>
+                          <ul>
+                            <li><i></i><span>Aporte · Tesouro Selic<small>hoje</small></span><b>+ R$ 500</b></li>
+                            <li><i></i><span>Proventos · FII<small>ontem</small></span><b class="up">+ R$ 86</b></li>
+                            <li><i></i><span>Compra · Ação<small>2 dias</small></span><b>− R$ 320</b></li>
+                          </ul>
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-dock">
+                  <i style="--a:#46e0c3;--b:#129ca0"></i><i style="--a:#ff9b8e;--b:#e5604f"></i><i style="--a:#ffd27d;--b:#f2a93b"></i><i style="--a:#8ab4ff;--b:#4c7df0"></i><i style="--a:#c7a6ff;--b:#8a5cf0"></i><i style="--a:#7fe0a0;--b:#2fb36a"></i><i style="--a:#eef2f4;--b:#aab4ba"></i>
+                </div>
+              </div>
+
+              <i class="mb-off"></i>
+            </div>
+          </div>
+          <div class="mb-hinge"></div>
+          <div class="mb-base"><i></i></div>
+          <div class="mb-shadow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO ABRIR CONTA -->
+    <section class="section hw" id="como-funciona">
+      <div class="hw-bg" aria-hidden="true">
+        <div class="hw-tape t1"><div><span>AÇÕES</span><b>▲</b><span>FIIs</span><b>▲</b><span>RENDA FIXA</span><b>▲</b><span>FUNDOS</span><b>▲</b><span>ETFs</span><b class="dn">▼</b><span>CRIPTO</span><b>▲</b><span>AÇÕES</span><b>▲</b><span>FIIs</span><b>▲</b><span>RENDA FIXA</span><b>▲</b><span>FUNDOS</span><b>▲</b><span>ETFs</span><b class="dn">▼</b><span>CRIPTO</span><b>▲</b></div></div>
+        <div class="hw-tape t2"><div><span>TESOURO DIRETO</span><b>▲</b><span>CDB</span><b>▲</b><span>LCI</span><b class="dn">▼</b><span>LCA</span><b>▲</b><span>DEBÊNTURES</span><b>▲</b><span>TESOURO DIRETO</span><b>▲</b><span>CDB</span><b>▲</b><span>LCI</span><b class="dn">▼</b><span>LCA</span><b>▲</b><span>DEBÊNTURES</span><b>▲</b></div></div>
+        <svg class="hw-arc" viewBox="0 0 1200 600" preserveAspectRatio="xMaxYMax slice">
+          <defs><linearGradient id="hwarc" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#46e0c3" stop-opacity="0"/><stop offset=".45" stop-color="#46e0c3" stop-opacity=".7"/><stop offset="1" stop-color="#e6fff9"/></linearGradient></defs>
+          <path d="M 260 650 C 600 610 900 470 1240 240" fill="none" stroke="url(#hwarc)" stroke-width="9" stroke-linecap="round" opacity=".25"/>
+          <path d="M 260 650 C 600 610 900 470 1240 240" fill="none" stroke="url(#hwarc)" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="container hw-grid">
+        <div class="hw-left reveal">
+          <span class="eyebrow">Como começar</span>
+          <h2>Abra sua conta em <em>3 passos.</em></h2>
+          <ol class="hw-steps" id="hwSteps">
+            <li class="on" data-i="0">
+              <button type="button"><span class="n">01</span><span class="t"><b>Crie seu cadastro</b><small>Informe seus dados básicos e valide seu e-mail e celular.</small></span></button>
+              <i class="bar"></i>
+            </li>
+            <li data-i="1">
+              <button type="button"><span class="n">02</span><span class="t"><b>Verifique sua identidade</b><small>Envie seus documentos e uma selfie, tudo pelo celular.</small></span></button>
+              <i class="bar"></i>
+            </li>
+            <li data-i="2">
+              <button type="button"><span class="n">03</span><span class="t"><b>Faça seu primeiro aporte</b><small>Transfira o valor que quiser e escolha seus investimentos.</small></span></button>
+              <i class="bar"></i>
+            </li>
+          </ol>
+          <a class="hw-cta" href="#abrir-conta">Abrir minha conta <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="hw-stage reveal" id="hwStage">
+          <div class="hw-float hf-a" aria-hidden="true">
+            <small>Carteira</small><b>+2,8%</b><span>no mês</span>
+            <svg viewBox="0 0 120 34" preserveAspectRatio="none"><path d="M0 28 L16 24 L30 26 L46 16 L60 20 L76 10 L92 14 L106 5 L120 3" fill="none" stroke="#46e0c3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="hw-float hf-b" aria-hidden="true">
+            <i>✓</i><span><b>Proventos recebidos</b><small>R$ 86,00 · agora</small></span>
+          </div>
+          <div class="hw-phone" id="hwPhone" aria-hidden="true">
+            <div class="hw-body">
+              <div class="hw-screen">
+                <div class="hw-status">
+                  <span>9:41</span>
+                  <i class="hw-island"><b></b></i>
+                  <span class="hw-sys">
+                    <svg viewBox="0 0 18 12" fill="currentColor"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+                    <svg viewBox="0 0 16 12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M1.5 4.2a9.5 9.5 0 0 1 13 0M4 7a6 6 0 0 1 8 0"/><circle cx="8" cy="10" r="1" fill="currentColor" stroke="none"/></svg>
+                    <svg viewBox="0 0 27 12" fill="none"><rect x=".5" y=".5" width="22" height="11" rx="3.5" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="17" height="8" rx="2" fill="currentColor"/><rect x="24" y="4" width="2" height="4" rx="1" fill="currentColor" opacity=".45"/></svg>
+                  </span>
+                </div>
+
+                <div class="hw-app">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                  <span id="hwTitle">Cadastro</span>
+                  <em>Etapa <b id="hwNum">1</b> de 3</em>
+                </div>
+                <div class="hw-prog"><i></i></div>
+
+                <div class="hw-views">
+                  <div class="hw-view v0 on">
+                    <p class="hw-h">Vamos começar</p>
+                    <div class="fl"><small>Nome completo</small><span class="ty t1">Felipe Sokulski</span></div>
+                    <div class="fl"><small>E-mail</small><span class="ty t2">felipe@email.com</span></div>
+                    <div class="fl"><small>Celular</small><span class="ty t3">(11) 90000-0000</span></div>
+                    <label class="chk"><i></i><span>Li e aceito os termos de uso</span></label>
+                    <div class="hw-btn">Continuar</div>
+                  </div>
+
+                  <div class="hw-view v1">
+                    <p class="hw-h">Confirme quem é você</p>
+                    <div class="idcard">
+                      <div class="idc-top"><span>Documento de identidade</span><i></i></div>
+                      <div class="idc-body"><div class="photo"></div><div class="lines"><i></i><i></i><i></i></div></div>
+                      <span class="scan"></span>
+                    </div>
+                    <div class="selfie">
+                      <div class="face"><i></i><b></b><b></b><b></b><b></b></div>
+                      <svg class="okring" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="19" stroke="#46e0c3" stroke-width="2.4" stroke-linecap="round"/><path d="M13 23l6 6 12-13" stroke="#0a6a70" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="hw-ok">Identidade verificada</div>
+                  </div>
+
+                  <div class="hw-view v2">
+                    <p class="hw-h">Quanto quer aportar?</p>
+                    <div class="amt"><b>R$ 500</b><small>Você pode alterar quando quiser</small></div>
+                    <div class="chips"><span>R$ 100</span><span class="sel">R$ 500</span><span>R$ 1.000</span></div>
+                    <div class="pay"><div><small>Forma</small><b>Pix</b></div><div><small>Destino</small><b>Minha carteira</b></div></div>
+                    <div class="hw-btn">Confirmar aporte</div>
+                    <div class="hw-ok hw-ok2">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path class="ck" d="M5 12.5l4.5 4.5L19 7.5"/></svg>Aporte confirmado
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hw-dots"><i class="on"></i><i></i><i></i></div>
+                <i class="hw-home"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEGURANÇA -->
+    <section class="section sc" id="seguranca">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Segurança</span>
+          <h2>Seu patrimônio, <em>protegido.</em></h2>
+          <p>Tecnologia e boas práticas para você investir com tranquilidade, em cada acesso e em cada operação.</p>
+        </header>
+
+        <div class="sc-grid">
+          <!-- Criptografia (alto) -->
+          <article class="sc-card sc-a reveal">
+            <div class="sc-viz sv-flow" aria-hidden="true">
+              <div class="flow-node n-dev"><span class="dev"><i></i></span><small>Seu app</small></div>
+              <div class="flow-line"><i class="pkt"></i><i class="pkt p2"></i><i class="pkt p3"></i></div>
+              <div class="flow-lock">
+                <svg viewBox="0 0 64 72" fill="none"><path d="M32 4 56 13v22c0 17-11 28-24 33C19 63 8 52 8 35V13z" fill="#06404a"/><path d="M32 4 56 13v22c0 17-11 28-24 33" fill="#0a6a70"/><rect x="21" y="31" width="22" height="17" rx="4" fill="#fff"/><path d="M26 31v-4a6 6 0 0 1 12 0v4" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/><circle cx="32" cy="40" r="2.4" fill="#06404a"/></svg>
+                <em>Dados criptografados</em>
+              </div>
+              <div class="flow-line"><i class="pkt"></i><i class="pkt p2"></i><i class="pkt p3"></i></div>
+              <div class="flow-node n-srv"><span class="srv"><i></i><i></i><i></i></span><small>Servidores fkInvest</small></div>
+            </div>
+            <h3>Criptografia de ponta a ponta</h3>
+            <p>Seus dados e suas transações trafegam protegidos do app até os nossos servidores.</p>
+          </article>
+
+          <!-- 2FA -->
+          <article class="sc-card sc-b reveal">
+            <div class="sc-viz sv-otp" aria-hidden="true">
+              <div class="otp-toast"><i>fk</i><span><small>fkInvest · agora</small><b>Seu código: 482 913</b></span></div>
+              <div class="otp-boxes"><i>4</i><i>8</i><i>2</i><i>9</i><i>1</i><i>3</i></div>
+              <div class="otp-ok">Acesso confirmado</div>
+            </div>
+            <h3>Autenticação em duas etapas</h3>
+            <p>Uma camada extra de proteção no acesso e nas movimentações.</p>
+          </article>
+
+          <!-- Monitoramento -->
+          <article class="sc-card sc-c reveal">
+            <div class="sc-viz sv-watch" aria-hidden="true">
+              <div class="watch-top"><i></i>Monitorando agora</div>
+              <ul>
+                <li><span class="wi"></span><b>Compra no app</b><em>OK</em></li>
+                <li class="flag"><span class="wi"></span><b>Novo dispositivo</b><em>Verificando</em></li>
+                <li><span class="wi"></span><b>Transferência</b><em>OK</em></li>
+              </ul>
+              <span class="watch-scan"></span>
+            </div>
+            <h3>Monitoramento contínuo</h3>
+            <p>Detecção de atividades suspeitas e alertas na hora, para agir rápido.</p>
+          </article>
+
+          <!-- Transparência (largo) -->
+          <article class="sc-card sc-d reveal">
+            <div class="sc-viz sv-bill" aria-hidden="true">
+              <div class="bill">
+                <div class="bill-h"><b>Resumo da operação</b><i>Antes de confirmar</i></div>
+                <div class="bill-r"><span>Corretagem</span><u></u></div>
+                <div class="bill-r"><span>Taxas</span><u></u></div>
+                <div class="bill-r"><span>Impostos</span><u></u></div>
+                <div class="bill-t"><span>Total</span><u></u></div>
+              </div>
+              <div class="bill-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Tudo à vista</div>
+            </div>
+            <div class="sc-text">
+              <h3>Transparência em cada operação</h3>
+              <p>Custos e taxas informados com clareza antes de cada operação, sem surpresas depois.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section alt" id="faq">
+      <div class="container narrow">
+        <header class="section-head reveal">
+          <span class="eyebrow">Dúvidas</span>
+          <h2>Perguntas <em>frequentes.</em></h2>
+        </header>
+        <div class="faq reveal">
+          <details open>
+            <summary>Quanto custa abrir uma conta na fkInvest?</summary>
+            <p>Os custos de abertura, manutenção e operação serão informados de forma clara na tabela de tarifas antes de você contratar qualquer serviço.</p>
+          </details>
+          <details>
+            <summary>Preciso ter experiência para investir?</summary>
+            <p>Não. Oferecemos conteúdo educativo e informações claras de risco em cada produto, para você investir no seu ritmo.</p>
+          </details>
+          <details>
+            <summary>Qual é o valor mínimo para começar?</summary>
+            <p>Depende do ativo. Com cotas e ações fracionadas, é possível começar com valores baixos. O mínimo de cada produto aparece antes da compra.</p>
+          </details>
+          <details>
+            <summary>Como retiro meu dinheiro?</summary>
+            <p>Você solicita o resgate pelo app. O prazo depende da liquidez de cada investimento, informada antes da aplicação.</p>
+          </details>
+          <details>
+            <summary>A fkInvest oferece recomendação de investimento?</summary>
+            <p>Os conteúdos são informativos e educacionais. As decisões de investimento são sempre suas.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta" id="abrir-conta">
+      <div class="container">
+        <div class="cta-box reveal">
+          <h2>Comece a investir com a <em>fkInvest.</em></h2>
+          <p>Abra sua conta gratuitamente e dê o primeiro passo para o seu patrimônio.</p>
+
+          <form class="form form-lg" data-form novalidate>
+            <label class="sr-only" for="email-cta">Seu e-mail</label>
+            <input type="email" id="email-cta" name="email" placeholder="seu@email.com" required autocomplete="email">
+            <button class="btn" type="submit">Abrir minha conta <span aria-hidden="true">→</span></button>
+            <p class="form-msg" role="status" aria-live="polite"></p>
+          </form>
+          <ul class="cta-trust"><li>Cadastro 100% online</li><li>Sem papelada</li><li>Suporte humano</li></ul>
+          <p class="micro">Ao continuar, você concorda com os Termos de Uso e a Política de Privacidade.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="logo" href="#top"><span class="logo-mark">fk</span><span>fk<b>Invest</b></span></a>
+      <p>© <span id="year"></span> fkInvest. Investimentos envolvem riscos, inclusive de perda do capital investido. Rentabilidade passada não é garantia de resultados futuros. Os conteúdos deste site têm caráter informativo e não constituem recomendação de investimento.</p>
+    </div>
+    <span class="watermark" aria-hidden="true">fkInvest</span>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
